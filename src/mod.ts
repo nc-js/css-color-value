@@ -1,9 +1,5 @@
-/**
- * Adds x and y.
- * @param {number} x
- * @param {number} y
- * @returns {number} Sum of x and y
- */
-export function add(x: number, y: number): number {
-	return x + y
+export class CssColorValue extends CSSStyleValue {
+	static override parse(_value: string): CssColorValue | CSSStyleValue {
+		throw new Error()
+	}
 }
