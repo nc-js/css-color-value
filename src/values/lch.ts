@@ -3,7 +3,7 @@ import { rectifyColorAngle, rectifyColorPercent } from '../reify.ts'
 import type { CSSColorAngle, CSSColorPercent } from '../types.ts'
 
 /**
- * The CIE L*C*h° (CIELCh) color space (a polar version of CIE L*a*b*),
+ * The CIE L\*C\*h° (CIELCh) color space (a polar version of CIE L*a*b*),
  * which represents the CSS `lch()` function.
  *
  * @see {@link https://www.w3.org/TR/css-typed-om-1/#csslch}
