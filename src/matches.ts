@@ -103,7 +103,7 @@ export const matchesFrequency = (value: CSSMatchableType): boolean =>
 	matchesType(value, 'frequency')
 
 /**
- * A CSSNumericValue matches for `<resolution>`
+ * A `CSSNumericValue` matches for `<resolution>`
  * when the only non-zero entry of `CSSNumericType` is resolution of 1.
  *
  * This can also match against a `CSSNumericType` directly.
