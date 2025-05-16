@@ -5,7 +5,7 @@
 export type CSSMatchableType = CSSNumericType | CSSNumericValue
 
 /**
- * Dynamically match the type for a `CSSNumericValue`.
+ * Dynamically match the base type for a `CSSNumericValue`.
  *
  * The expected base type must be one of either:
  * - `'length'` (CSS `<length>` type)
@@ -16,7 +16,7 @@ export type CSSMatchableType = CSSNumericType | CSSNumericValue
  * - `'flex'` (CSS `<flex>` type)
  * - `'percent'` (CSS `<percentage>` type)
  *
- * @note To match for a `<number>`, call `matchesNumber()` instead.
+ * To match for a `<number>`, call `matchesNumber()` instead.
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#cssnumericvalue-match}
  */
 export const matchesType = (
@@ -36,7 +36,7 @@ export const matchesType = (
 }
 
 /**
- * A CSSNumericValue matches for `<number>`
+ * A `CSSNumericValue` matches for `<number>`
  * when all entries of `CSSNumericType` are non-zero.
  *
  * This can also match against a `CSSNumericType` directly.
