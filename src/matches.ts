@@ -1,11 +1,11 @@
 /**
  * A CSS Typed OM value that can be matched against
- * a specific CSS type
+ * a specific CSS type.
  */
 export type CSSMatchableType = CSSNumericType | CSSNumericValue
 
 /**
- * Dynamically match the type for a `CSSNumericValue`
+ * Dynamically match the type for a `CSSNumericValue`.
  *
  * The expected base type must be one of either:
  * - `'length'` (CSS `<length>` type)
