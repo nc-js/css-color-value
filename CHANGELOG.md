@@ -8,7 +8,7 @@
 - Fixes a typo in a method name, where `matchesPercent()` is renamed to `matchesPercentage()` (matching the CSS type, `<percentage>`).
 
 ### Documentation
-- Adds usage examples for `CssRgb` and `CssHsl`.
+- Adds usage examples for `CssRgb`, `CssHsl`, and `CssHwb`.
 
 ## 0.1.2 (2025-05-15)
 - Fix: correctly export all symbols
