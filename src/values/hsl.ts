@@ -5,7 +5,7 @@ import type { CSSColorAngle, CSSColorPercent } from './../types.ts'
 /**
  * The HSL color space, which represents the CSS `hsl()`/`hsla()` functions.
  *
- * @see {@link https://www.w3.org/TR/css-typed-om-1/#csshsl}
+ * @see {@link https://drafts.css-houdini.org/css-typed-om/#csshsl}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl}
  *
  * @example

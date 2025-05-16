@@ -5,7 +5,7 @@ import type { CSSColorNumber, CSSColorPercent } from '../types.ts'
 /**
  * The Oklab color space, which represents the CSS `oklab()` function.
  *
- * @see {@link https://www.w3.org/TR/css-typed-om-1/#cssoklab}
+ * @see {@link https://drafts.css-houdini.org/css-typed-om/#cssoklab}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab}
  */
 export class CssOkLab extends CssColorValue {

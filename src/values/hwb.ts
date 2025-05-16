@@ -4,7 +4,7 @@ import { rectifyColorAngle, rectifyColorPercent } from '../reify.ts'
 /**
  * The HWB color space, which represents the CSS `hwb()` function.
  *
- * @see {@link https://www.w3.org/TR/css-typed-om-1/#csshwb}
+ * @see {@link https://drafts.css-houdini.org/css-typed-om/#csshwb}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb}
  *
  * @example

@@ -6,7 +6,7 @@ import type { CSSColorAngle, CSSColorPercent } from '../types.ts'
  * The Oklch color space (polar verison of Oklab),
  * which epresents the CSS `oklch()` function.
  *
- * @see {@link https://www.w3.org/TR/css-typed-om-1/#cssoklch}
+ * @see {@link https://drafts.css-houdini.org/css-typed-om/#cssoklch}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab}
  */
 export class CssOkLch extends CssColorValue {

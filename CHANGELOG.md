@@ -11,11 +11,13 @@
 - Fixes a typo in a function name, where `matchesPercent()` is renamed to `matchesPercentage()` (matching the CSS type, `<percentage>`).
 
 ### Documentation
+- Adds module-level documentation to every module.
 - Adds usage examples for `CssRgb`, `CssHsl`, and `CssHwb`.
 - `CssLab`, `CssLch`: Fixes text-rendering in the summary.
 - `CssColor`: Adds MDN link to the CSS `color()` function for `CssColor`.
 - `CssColor`: Clarifies valid color space types for `CssColor`.
 - Cleans up documentation for type-matching functions.
+- Consistently links to `drafts.css-houdini.org` instead of `w3.org` for W3-related links.
 - (Internal) Clarifies the conditions that a reifying/rectifying function (under `./reify`) throws a `SyntaxError`.
 
 ## 0.1.2 (2025-05-15)

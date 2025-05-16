@@ -1,4 +1,10 @@
 /**
+ * Functions for matching the CSS type of either
+ * a `CSSNumericValue` or `CSSNumericType`.
+ * @module
+ */
+
+/**
  * A CSS Typed OM value that can be matched against
  * a specific CSS type.
  */
