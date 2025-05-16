@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 (Unreleased)
+### Features
+- Add `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
+
 ## 0.1.2 (2025-05-15)
 - Fix: correctly export all symbols
 
