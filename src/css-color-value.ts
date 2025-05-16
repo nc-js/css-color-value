@@ -5,7 +5,7 @@
  */
 export class CssColorValue extends CSSStyleValue {
 	/**
-	 * Parse a string into a `CssColorValue`
+	 * Parse a string into a `CssColorValue`.
 	 *
 	 * @see {@link https://drafts.css-houdini.org/css-typed-om/#dom-csscolorvalue-parse}
 	 */
