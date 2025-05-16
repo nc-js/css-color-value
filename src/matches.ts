@@ -88,12 +88,12 @@ export const matchesFlex = (value: CSSNumericValue): boolean =>
 	matchesSingleType(value, 'flex', 1)
 
 /**
- * A CSSNumericValue matches for `<percent>`
+ * A CSSNumericValue matches for `<percentage>`
  * when the only non-zero entry of `CSSNumericType` is percent of 1
  *
- * @see {@link https://drafts.csswg.org/css-values-4/#percent-value}
+ * @see {@link https://drafts.csswg.org/css-values-4/#percentage-value}
  */
-export const matchesPercent = (value: CSSNumericValue): boolean =>
+export const matchesPercentage = (value: CSSNumericValue): boolean =>
 	matchesSingleType(value, 'percent', 1)
 
 /**
@@ -102,7 +102,7 @@ export const matchesPercent = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-length-percentage}
  */
 export const matchesLengthPercentage = (value: CSSNumericValue): boolean =>
-	matchesLength(value) || matchesPercent(value)
+	matchesLength(value) || matchesPercentage(value)
 
 /**
  * A CSSNumericValue matches for `<frequency-percentage>`
@@ -110,7 +110,7 @@ export const matchesLengthPercentage = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-frequency-percentage}
  */
 export const matchesFrequencyPercentage = (value: CSSNumericValue): boolean =>
-	matchesFrequency(value) || matchesPercent(value)
+	matchesFrequency(value) || matchesPercentage(value)
 
 /**
  * A CSSNumericValue matches for `<angle-percentage>`
@@ -118,7 +118,7 @@ export const matchesFrequencyPercentage = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-angle-percentage}
  */
 export const matchesAnglePercentage = (value: CSSNumericValue): boolean =>
-	matchesAngle(value) || matchesPercent(value)
+	matchesAngle(value) || matchesPercentage(value)
 
 /**
  * A CSSNumericValue matches for `<time-percentage>`
@@ -126,4 +126,4 @@ export const matchesAnglePercentage = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-time-percentage}
  */
 export const matchesTimePercentage = (value: CSSNumericValue): boolean =>
-	matchesTime(value) || matchesPercent(value)
+	matchesTime(value) || matchesPercentage(value)

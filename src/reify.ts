@@ -1,4 +1,4 @@
-import { matchesAngle, matchesNumber, matchesPercent } from './matches.ts'
+import { matchesAngle, matchesNumber, matchesPercentage } from './matches.ts'
 import type {
 	CSSColorAngle,
 	CSSColorNumber,
@@ -40,7 +40,7 @@ export function rectifyColorRGBComp(
 	}
 	if (
 		val instanceof CSSNumericValue &&
-		(matchesNumber(val) || matchesPercent(val))
+		(matchesNumber(val) || matchesPercentage(val))
 	) {
 		return val
 	}
@@ -64,7 +64,7 @@ export function rectifyColorPercent(
 	if (typeof val === 'string') {
 		return rectifyKeywordish(val)
 	}
-	if (val instanceof CSSNumericValue && matchesPercent(val)) {
+	if (val instanceof CSSNumericValue && matchesPercentage(val)) {
 		return val
 	}
 	if (val instanceof CSSKeywordValue && val.value.toLowerCase() === 'none') {
