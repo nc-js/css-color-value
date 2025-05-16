@@ -23,7 +23,11 @@
 		]
 	},
 	"exports": {
-		".": "./src/mod.ts"
+		".": "./src/mod.ts",
+		"./css-color-value": "./src/css-color-value.ts",
+		"./matches": "./src/matches.ts",
+		"./types": "./src/types.ts",
+		"./values": "./src/values.ts"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@1",
