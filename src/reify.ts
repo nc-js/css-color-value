@@ -7,7 +7,7 @@ import type {
 } from './types.ts'
 
 /**
- * Normalizes an `<ident>` into a CSSKeywordValue.
+ * Normalizes an `<ident>` into a `CSSKeywordValue`.
  *
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#reify-an-identifier}
  */
@@ -16,7 +16,7 @@ export function reifyIdent(ident: string): CSSKeywordValue {
 }
 
 /**
- * Normalizes a `CSSKeywordish` into a CSSKeywordValue.
+ * Normalizes a `CSSKeywordish` into a `CSSKeywordValue`.
  *
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#rectify-a-keywordish-value}
  */
