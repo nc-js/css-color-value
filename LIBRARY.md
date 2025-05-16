@@ -1,13 +1,6 @@
-# @example/package
+# @nc/css-color-value
 
-A description of this library.
-
-## Usage
-```ts
-import { add } from '@example/package'
-
-add(2, 2)
-```
+A work-in-progress polyfill for `CSSColorValue` and related types, from the CSS Typed OM Level 1 API.
 
 ## License
 
