@@ -21,9 +21,11 @@
 - (Internal) Clarifies the conditions that a reifying/rectifying function (under `./reify`) throws a `SyntaxError`.
 
 ## 0.1.2 (2025-05-15)
-- Fix: correctly export all symbols
+### Fixes
+- Correctly export all symbols
 
 ## 0.1.0 (2025-05-15)
+### Documentation
 - Use correct `README.md` file for package
 
 ## 0.1.0 (2025-05-15)
