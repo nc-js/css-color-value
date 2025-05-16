@@ -1,5 +1,5 @@
+import { CssColorValue } from './../css-color-value.ts'
 import { rectifyColorPercent, rectifyColorRGBComp } from '../reify.ts'
-import { CssColorValue } from './../mod.ts'
 import type { CSSColorPercent, CSSColorRGBComp } from './../types.ts'
 
 /**
