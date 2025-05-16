@@ -3,9 +3,11 @@ import type { CSSColorPercent } from '../mod.ts'
 import { rectifyColorPercent, rectifyKeywordish } from '../reify.ts'
 
 /**
- * A generic color space, representing the CSS `color()` function.
+ * A generic color space, which represents the CSS `color()` function
+ * (introduced in CSS Colors Module Level 4).
  *
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#csscolor}
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color}
  */
 export class CSSColor extends CssColorValue {
 	private _colorSpace: CSSKeywordish
@@ -24,7 +26,19 @@ export class CSSColor extends CssColorValue {
 		this._alpha = rectifyColorPercent(alpha) as CSSNumberish
 	}
 
-	/** The color space */
+	/**
+	 * The color space, which must be one of
+	 * the following predefined color space strings:
+	 *  - `'srgb'` (Standard RGB)
+	 *  - `'srgb-linear'` (Linear Standard RGB)
+	 *  - `'display-p3'` (Display P3)
+	 *  - `'a98-rgb'` (Adobe® 98 RGB)
+	 *  - `'prophoto-rgb'` (PropPhoto RGB)
+	 *  - `'rec2020'` (Rec. 2020, or BT.2020)
+	 *  - `'xyz'` (CIE XYZ)
+	 *  - `'xyz-d50'` (CIE XYZ with standard illuminant D50 white)
+	 *  - `'xyz-d65'` (CIE XYZ with standard illuminant D65 white)
+	 */
 	public get colorSpace(): CSSKeywordish {
 		return this._colorSpace
 	}

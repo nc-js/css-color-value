@@ -3,7 +3,7 @@ import { rectifyColorNumber, rectifyColorPercent } from '../reify.ts'
 import type { CSSColorNumber, CSSColorPercent } from '../types.ts'
 
 /**
- * The CIE L*a*b* (CIELAB) color space, which represents the CSS `lab()` function.
+ * The CIE L\*a\*b\* (CIELAB) color space, which represents the CSS `lab()` function.
  *
  * @see {@link https://www.w3.org/TR/css-typed-om-1/#csslab}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab}

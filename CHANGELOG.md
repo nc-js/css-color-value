@@ -10,6 +10,9 @@
 
 ### Documentation
 - Adds usage examples for `CssRgb`, `CssHsl`, and `CssHwb`.
+- `CssLab`, `CssLch`: Fixes text-rendering in the summary.
+- `CssColor`: Adds MDN link to the CSS `color()` function for `CssColor`.
+- `CssColor`: Clarifies valid color space types for `CssColor`.
 - Cleans up documentation for type-matching functions.
 - (Internal) Clarifies the conditions that a reifying/rectifying function (under `./reify`) throws a `SyntaxError`.
 
