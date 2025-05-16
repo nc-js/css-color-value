@@ -1,16 +1,15 @@
 /**
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#cssnumericvalue-match}
  */
-const matchesSingleType = (
+const matchesType = (
 	value: CSSNumericValue,
 	productionKey: keyof CSSNumericType,
-	expected: number = 1,
 ): boolean => {
 	const type = value.type()
 	for (const key in type) {
 		const typedKey = key as keyof CSSNumericType
 		if (typedKey === productionKey) {
-			if (type[typedKey] !== expected) return false
+			if (type[typedKey] !== 1) return false
 		} else {
 			if (type[typedKey] !== 0) return false
 		}
@@ -40,7 +39,7 @@ export const matchesNumber = (value: CSSNumericValue): boolean => {
  * @see {@link https://drafts.csswg.org/css-values-4/#length-value}
  */
 export const matchesLength = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'length', 1)
+	matchesType(value, 'length')
 
 /**
  * A CSSNumericValue matches for `<angle>`
@@ -49,7 +48,7 @@ export const matchesLength = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#angle-value}
  */
 export const matchesAngle = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'angle', 1)
+	matchesType(value, 'angle')
 
 /**
  * A CSSNumericValue matches for `<time>`
@@ -58,7 +57,7 @@ export const matchesAngle = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#time-value}
  */
 export const matchesTime = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'time', 1)
+	matchesType(value, 'time')
 
 /**
  * A CSSNumericValue matches for `<frequency>`
@@ -67,7 +66,7 @@ export const matchesTime = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#frequency-value}
  */
 export const matchesFrequency = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'frequency', 1)
+	matchesType(value, 'frequency')
 
 /**
  * A CSSNumericValue matches for `<resolution>`
@@ -76,7 +75,7 @@ export const matchesFrequency = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#resolution-value}
  */
 export const matchesResolution = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'resolution', 1)
+	matchesType(value, 'resolution')
 
 /**
  * A CSSNumericValue matches for `<flex>`
@@ -85,7 +84,7 @@ export const matchesResolution = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#flex-value}
  */
 export const matchesFlex = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'flex', 1)
+	matchesType(value, 'flex')
 
 /**
  * A CSSNumericValue matches for `<percentage>`
@@ -94,7 +93,7 @@ export const matchesFlex = (value: CSSNumericValue): boolean =>
  * @see {@link https://drafts.csswg.org/css-values-4/#percentage-value}
  */
 export const matchesPercentage = (value: CSSNumericValue): boolean =>
-	matchesSingleType(value, 'percent', 1)
+	matchesType(value, 'percent')
 
 /**
  * A CSSNumericValue matches for `<length-percentage>`

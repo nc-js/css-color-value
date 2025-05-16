@@ -10,6 +10,9 @@
 ### Documentation
 - Adds usage examples for `CssRgb`, `CssHsl`, and `CssHwb`.
 
+### Chore
+- Refactors `matchesType()`, the internal implementation for matching a `CSSNumericValue` type.
+
 ## 0.1.2 (2025-05-15)
 - Fix: correctly export all symbols
 
