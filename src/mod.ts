@@ -1,9 +1,15 @@
 /**
- * Adds x and y.
- * @param {number} x
- * @param {number} y
- * @returns {number} Sum of x and y
+ * A CSS Typed OM value which represents a `<color>`.
+ *
+ * @see {@link https://drafts.css-houdini.org/css-typed-om/#colorvalue-objects}
  */
-export function add(x: number, y: number): number {
-	return x + y
+export class CssColorValue extends CSSStyleValue {
+	/**
+	 * Parse a string into a `CssColorValue`
+	 *
+	 * @see {@link https://drafts.css-houdini.org/css-typed-om/#dom-csscolorvalue-parse}
+	 */
+	static override parse(_value: string): CssColorValue | CSSStyleValue {
+		throw new Error()
+	}
 }

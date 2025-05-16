@@ -1,5 +1,5 @@
 {
-	"name": "@example/package",
+	"name": "@nc/css-color-value",
 	"version": "0.1.0",
 	"license": "MIT",
 	"tasks": {
@@ -12,6 +12,14 @@
 			"!src/**/*_test.ts",
 			"README.md",
 			"LICENSE"
+		]
+	},
+	"compilerOptions": {
+		"lib": [
+			"deno.ns",
+			"DOM",
+			"DOM.Iterable",
+			"ESNext"
 		]
 	},
 	"exports": {
