@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 (2025-05-16)
+### Documentation
+- Fixes minor formatting consistency issue in `matchesFrequency()`.
+
 ## 0.2.1 (2025-05-16)
 ### Documentation
 - Use `README.md` as the root module-level documentation.
