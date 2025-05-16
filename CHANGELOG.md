@@ -4,6 +4,9 @@
 ### Features
 - Add `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
 
+### Fixes
+- Fixes a typo in a method name, where `matchesPercent()` is renamed to `matchesPercentage()` (matching the CSS type, `<percentage>`).
+
 ### Documentation
 - Adds usage examples for `CssRgb` and `CssHsl`.
 
