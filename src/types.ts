@@ -21,5 +21,3 @@ export type CSSColorNumber = CSSNumberish | CSSKeywordish
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#typedefdef-csscolorangle}
  */
 export type CSSColorAngle = CSSNumberish | CSSKeywordish
-
-CSSKeywordValue

@@ -3,8 +3,11 @@ import { rectifyColorAngle, rectifyColorPercent } from '../reify.ts'
 import type { CSSColorAngle, CSSColorPercent } from '../types.ts'
 
 /**
- * Represents the CSS `lch()` function.
+ * The CIE L*C*h° (CIELCh) color space (a polar version of CIE L*a*b*),
+ * which represents the CSS `lch()` function.
+ *
  * @see {@link https://www.w3.org/TR/css-typed-om-1/#csslch}
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch}
  */
 export class CssLch extends CssColorValue {
 	private _l: CSSColorPercent
@@ -25,34 +28,42 @@ export class CssLch extends CssColorValue {
 		this._alpha = rectifyColorPercent(alpha)
 	}
 
+	/** The color's lightness as a percentage */
 	public get l(): CSSColorPercent {
 		return this._l
 	}
 
+	/** Set the color's lightness as a percentage */
 	public set l(value: CSSColorPercent) {
 		this._l = rectifyColorPercent(value)
 	}
 
+	/** The color's chroma as a percentage */
 	public get c(): CSSColorPercent {
 		return this._c
 	}
 
+	/** Set the color's chroma as a percentage */
 	public set c(value: CSSColorPercent) {
 		this._c = rectifyColorPercent(value)
 	}
 
+	/** The color's hue as an angle */
 	public get h(): CSSColorAngle {
 		return this._h
 	}
 
+	/** Set the color's hue as an angle */
 	public set h(value: CSSColorAngle) {
 		this._h = rectifyColorAngle(value)
 	}
 
+	/** The alpha channel */
 	public get alpha(): CSSColorPercent {
 		return this._alpha
 	}
 
+	/** Set the alpha channel */
 	public set alpha(value: CSSColorPercent) {
 		this._alpha = rectifyColorPercent(value)
 	}
