@@ -2,16 +2,14 @@
 
 ## 0.2.0 (Unreleased)
 ### Features
-- Add `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
+- Adds `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
+- Adds `matchesType()` function, for dynamically checking the type of a `CSSNumericValue`.
 
 ### Fixes
 - Fixes a typo in a method name, where `matchesPercent()` is renamed to `matchesPercentage()` (matching the CSS type, `<percentage>`).
 
 ### Documentation
 - Adds usage examples for `CssRgb`, `CssHsl`, and `CssHwb`.
-
-### Chore
-- Refactors `matchesType()`, the internal implementation for matching a `CSSNumericValue` type.
 
 ## 0.1.2 (2025-05-15)
 - Fix: correctly export all symbols

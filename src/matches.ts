@@ -1,14 +1,24 @@
 /**
+ * Dynamically match the type for a `CSSNumericValue`,
+ * where the expected base type must be one of either:
+ * - `length`
+ * - `angle`
+ * - `time`
+ * - `frequency`
+ * - `resolution`
+ * - `flex`
+ * - `percent`
+ *
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#cssnumericvalue-match}
  */
-const matchesType = (
+export const matchesType = (
 	value: CSSNumericValue,
-	productionKey: keyof CSSNumericType,
+	expectedBaseType: keyof CSSNumericType,
 ): boolean => {
 	const type = value.type()
 	for (const key in type) {
 		const typedKey = key as keyof CSSNumericType
-		if (typedKey === productionKey) {
+		if (typedKey === expectedBaseType) {
 			if (type[typedKey] !== 1) return false
 		} else {
 			if (type[typedKey] !== 0) return false
