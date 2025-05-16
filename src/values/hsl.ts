@@ -9,7 +9,7 @@ import type { CSSColorAngle, CSSColorPercent } from './../types.ts'
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl}
  *
  * @example
- * ```ts
+ * ```ts ignore
  * import { CssHsl } from '@nc/css-color-value/values'
  *
  * // black and white

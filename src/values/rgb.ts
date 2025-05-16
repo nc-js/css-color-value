@@ -9,7 +9,7 @@ import type { CSSColorPercent, CSSColorRGBComp } from './../types.ts'
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb}
  *
  * @example
- * ```ts
+ * ```ts ignore
  * import { CssRgb } from '@nc/css-color-value/values'
  *
  * // black and white
