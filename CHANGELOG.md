@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 (2025-05-16)
+### Documentation
+- Use `README.md` as the root module-level documentation.
+
 ## 0.2.0 (2025-05-16)
 ### Features
 - Adds `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
