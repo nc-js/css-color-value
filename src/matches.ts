@@ -29,7 +29,7 @@ export const matchesType = (
 
 /**
  * A CSSNumericValue matches for `<number>`
- * when all entries of `CSSNumericType` are non-zero
+ * when all entries of `CSSNumericType` are non-zero.
  */
 export const matchesNumber = (value: CSSNumericValue): boolean => {
 	const type = value.type()
@@ -44,7 +44,7 @@ export const matchesNumber = (value: CSSNumericValue): boolean => {
 
 /**
  * A CSSNumericValue matches for `<length>`
- * when the only non-zero entry of `CSSNumericType` is length of 1
+ * when the only non-zero entry of `CSSNumericType` is length of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#length-value}
  */
@@ -53,7 +53,7 @@ export const matchesLength = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<angle>`
- * when the only non-zero entry of `CSSNumericType` is angle of 1
+ * when the only non-zero entry of `CSSNumericType` is angle of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#angle-value}
  */
@@ -62,7 +62,7 @@ export const matchesAngle = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<time>`
- * when the only non-zero entry of `CSSNumericType` is time of 1
+ * when the only non-zero entry of `CSSNumericType` is time of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#time-value}
  */
@@ -71,7 +71,7 @@ export const matchesTime = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<frequency>`
- * when the only non-zero entry of `CSSNumericType` is frequency of 1
+ * when the only non-zero entry of `CSSNumericType` is frequency of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#frequency-value}
  */
@@ -80,7 +80,7 @@ export const matchesFrequency = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<resolution>`
- * when the only non-zero entry of `CSSNumericType` is resolution of 1
+ * when the only non-zero entry of `CSSNumericType` is resolution of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#resolution-value}
  */
@@ -89,7 +89,7 @@ export const matchesResolution = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<flex>`
- * when the only non-zero entry of `CSSNumericType` is flex of 1
+ * when the only non-zero entry of `CSSNumericType` is flex of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#flex-value}
  */
@@ -98,7 +98,7 @@ export const matchesFlex = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<percentage>`
- * when the only non-zero entry of `CSSNumericType` is percent of 1
+ * when the only non-zero entry of `CSSNumericType` is percent of 1.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#percentage-value}
  */
@@ -107,6 +107,7 @@ export const matchesPercentage = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<length-percentage>`
+ * when it matches either `<length>` or `<percentage>`.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-length-percentage}
  */
@@ -115,6 +116,7 @@ export const matchesLengthPercentage = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<frequency-percentage>`
+ * when it matches either `<frequency>` or `<percentage>`.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-frequency-percentage}
  */
@@ -123,6 +125,7 @@ export const matchesFrequencyPercentage = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<angle-percentage>`
+ * when it matches either `<angle>` or `<percentage>`.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-angle-percentage}
  */
@@ -131,6 +134,7 @@ export const matchesAnglePercentage = (value: CSSNumericValue): boolean =>
 
 /**
  * A CSSNumericValue matches for `<time-percentage>`
+ * when it matches either `<time>` or `<percentage>`.
  *
  * @see {@link https://drafts.csswg.org/css-values-4/#typedef-time-percentage}
  */

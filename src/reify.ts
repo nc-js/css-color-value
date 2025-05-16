@@ -7,7 +7,7 @@ import type {
 } from './types.ts'
 
 /**
- * A method that turns an `<ident>` into a CSSKeywordValue.
+ * Normalizes an `<ident>` into a CSSKeywordValue.
  *
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#reify-an-identifier}
  */
@@ -16,7 +16,7 @@ export function reifyIdent(ident: string): CSSKeywordValue {
 }
 
 /**
- * A method that turns a CSSKeywordish into a CSSKeywordValue.
+ * Normalizes a `CSSKeywordish` into a CSSKeywordValue.
  *
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#rectify-a-keywordish-value}
  */
@@ -25,8 +25,16 @@ export function rectifyKeywordish(val: CSSKeywordish): CSSKeywordValue {
 }
 
 /**
- * A method that turns a CSSColorRGBComp into a Typed OM value.
+ * Normalizes a `CSSColorRGBComp` into a Typed OM value.
  *
+ * @throws {SyntaxError} Throws an error if it's not possible
+ * to normalize a `CSSColorRGBComp`. This happens if the given
+ * value fails all of the following conditions:
+ *  - The given value is a `number`.
+ *  - The given value is a `string`.
+ *  - The given value is a `CSSNumericValue` that matches either a
+ *    `<number>` or `<percentage>`.
+ *  - The given value is a `CSSKeywordValue` set to `none`.
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#rectify-a-csscolorrgbcomp}
  */
 export function rectifyColorRGBComp(
@@ -51,8 +59,15 @@ export function rectifyColorRGBComp(
 }
 
 /**
- * A method that turns a CSSColorPercent into a Typed OM value.
+ * Normalizes a `CSSColorPercent` into a Typed OM value.
  *
+ * @throws {SyntaxError} Throws an error if it's not possible
+ * to normalize a `CSSColorPercent`.  This happens if the given
+ * value fails all of the following conditions:
+ *  - The given value is a `number`.
+ *  - The given value is a `string`.
+ *  - The given value is a `CSSNumericValue` that matches a `<percentage>`.
+ *  - The given value is a `CSSKeywordValue` set to `none`.
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#rectify-a-csscolorpercent}
  */
 export function rectifyColorPercent(
@@ -74,8 +89,15 @@ export function rectifyColorPercent(
 }
 
 /**
- * A method that turns a CSSColorNumber into a Typed OM value.
+ * Normalizes a `CSSColorNumber` into a Typed OM value.
  *
+ * @throws {SyntaxError} Throws an error if it's not possible
+ * to normalize a `CSSColorNumber`. This happens if the given
+ * value fails all of the following conditions:
+ *  - The given value is a `number`.
+ *  - The given value is a `string`.
+ *  - The given value is a `CSSNumericValue` that matches a `<number>`.
+ *  - The given value is a `CSSKeywordValue` set to `none`.
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#rectify-a-csscolornumber}
  */
 export function rectifyColorNumber(
@@ -97,8 +119,15 @@ export function rectifyColorNumber(
 }
 
 /**
- * A method that turns a CSSColorAngle into a Typed OM value.
+ * Normalizes a `CSSColorAngle` into a Typed OM value.
  *
+ * @throws {SyntaxError} Throws an error if it's not possible
+ * to normalize a `CSSColorAngle`. This happens if the given
+ * value fails all of the following conditions:
+ *  - The given value is a `number`.
+ *  - The given value is a `string`.
+ *  - The given value is a `CSSNumericValue` that matches an `<angle>`.
+ *  - The given value is a `CSSKeywordValue` set to `none`.
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#rectify-a-csscolorangle}
  */
 export function rectifyColorAngle(
