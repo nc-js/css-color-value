@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 (Unreleased)
+## 0.2.0 (2025-05-16)
 ### Features
 - Adds `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
 - Exports the `matchesType()` function (formerly internal), for dynamically checking the type of a `CSSNumericValue`.
@@ -11,11 +11,11 @@
 - Fixes a typo in a function name, where `matchesPercent()` is renamed to `matchesPercentage()` (matching the CSS type, `<percentage>`).
 
 ### Documentation
-- Adds module-level documentation to every module.
-- Adds usage examples for `CssRgb`, `CssHsl`, and `CssHwb`.
+- `CssRgb`, `CssHsl`, `CssHwb`: Adds usage examples.
 - `CssLab`, `CssLch`: Fixes text-rendering in the summary.
 - `CssColor`: Adds MDN link to the CSS `color()` function for `CssColor`.
 - `CssColor`: Clarifies valid color space types for `CssColor`.
+- Adds module-level documentation to every module.
 - Cleans up documentation for type-matching functions.
 - Consistently links to `drafts.css-houdini.org` instead of `w3.org` for W3-related links.
 - (Internal) Clarifies the conditions that a reifying/rectifying function (under `./reify`) throws a `SyntaxError`.
