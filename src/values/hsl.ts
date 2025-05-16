@@ -14,6 +14,7 @@ export class CssHsl extends CssColorValue {
 	private _l: CSSColorPercent
 	private _alpha: CSSColorPercent
 
+	/** Create a `CssHsl` instance */
 	public constructor(
 		h: CSSColorAngle,
 		s: CSSColorPercent,

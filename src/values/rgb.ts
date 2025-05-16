@@ -14,6 +14,7 @@ export class CssRgb extends CssColorValue {
 	private _b: CSSColorRGBComp
 	private _alpha: CSSColorPercent
 
+	/** Create a `CssRgb` instance */
 	public constructor(
 		r: CSSColorRGBComp,
 		g: CSSColorRGBComp,

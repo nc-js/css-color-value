@@ -13,6 +13,7 @@ export class CssHwb extends CssColorValue {
 	private _b: CSSNumberish
 	private _alpha: CSSNumberish
 
+	/** Create a `CssHwb` instance */
 	public constructor(
 		h: CSSNumericValue,
 		w: CSSNumberish,

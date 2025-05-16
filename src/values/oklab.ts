@@ -14,6 +14,7 @@ export class CssOkLab extends CssColorValue {
 	private _b: CSSColorNumber
 	private _alpha: CSSColorPercent
 
+	/** Create a `CssOkLab` instance */
 	public constructor(
 		l: CSSColorPercent,
 		a: CSSColorNumber,

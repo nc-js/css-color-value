@@ -14,6 +14,7 @@ export class CssLab extends CssColorValue {
 	private _b: CSSColorNumber
 	private _alpha: CSSColorPercent
 
+	/** Create a `CssLab` instance */
 	public constructor(
 		l: CSSColorPercent,
 		a: CSSColorNumber,

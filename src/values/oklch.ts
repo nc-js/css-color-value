@@ -15,6 +15,7 @@ export class CssOkLch extends CssColorValue {
 	private _h: CSSColorAngle
 	private _alpha: CSSColorPercent
 
+	/** Create a `CssOkLch` instance */
 	public constructor(
 		l: CSSColorPercent,
 		c: CSSColorPercent,
