@@ -1,4 +1,9 @@
 /**
+ * Types that canonically represent a CSS type or `none`.
+ * @module
+ */
+
+/**
  * Canonically represents a value that is either `<number>`, `<percentage>`, or the keyword `none`.
  * @see {@link https://drafts.css-houdini.org/css-typed-om/#typedefdef-csscolorrgbcomp}
  */

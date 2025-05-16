@@ -5,7 +5,7 @@ import type { CSSColorPercent, CSSColorRGBComp } from './../types.ts'
 /**
  * The RGB color space, which represents the CSS `rgb()`/`rgba()` functions.
  *
- * @see {@link https://www.w3.org/TR/css-typed-om-1/#cssrgb}
+ * @see {@link https://drafts.css-houdini.org/css-typed-om/#cssrgb}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb}
  *
  * @example
