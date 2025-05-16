@@ -4,6 +4,9 @@
 ### Features
 - Add `CssColor` type, which represents a generic color space and the CSS `color()` function (CSS Colors Module Level 4). This polyfills the official `CSSColor` type.
 
+### Documentation
+- Adds usage examples for `CssRgb` and `CssHsl`.
+
 ## 0.1.2 (2025-05-15)
 - Fix: correctly export all symbols
 

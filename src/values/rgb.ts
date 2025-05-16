@@ -1,5 +1,5 @@
+import { CssColorValue } from './../css-color-value.ts'
 import { rectifyColorPercent, rectifyColorRGBComp } from '../reify.ts'
-import { CssColorValue } from './../mod.ts'
 import type { CSSColorPercent, CSSColorRGBComp } from './../types.ts'
 
 /**
@@ -7,6 +7,25 @@ import type { CSSColorPercent, CSSColorRGBComp } from './../types.ts'
  *
  * @see {@link https://www.w3.org/TR/css-typed-om-1/#cssrgb}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb}
+ *
+ * @example
+ * ```ts ignore
+ * import { CssRgb } from '@nc/css-color-value/values'
+ *
+ * // black and white
+ * const black = new CssRgb(0, 0, 0)
+ * const white = new CssRgb(255, 255, 255)
+ *
+ * // red, green, and blue
+ * const red = new CssRgb(255, 0, 0)
+ * const green = new CssRgb(0, 255, 0)
+ * const blue = new CssRgb(0, 0, 255)
+ *
+ * // cyan, magenta, and yellow
+ * const cyan = new CssRgb(0, 255, 255)
+ * const magenta = new CssRgb(255, 0, 255)
+ * const yellow = new CssRgb(255, 255, 0)
+ * ```
  */
 export class CssRgb extends CssColorValue {
 	private _r: CSSColorRGBComp
