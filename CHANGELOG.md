@@ -2,8 +2,8 @@
 
 ## 0.2.3 (2025-05-17)
 ### documentation
-- Fix minor typo in documentation for `CssHwb` and `CssOkLch`
-- Add inline comments in example for `CssRgb`
+- Fix minor typo in documentation for `CssHwb` and `CssOkLch`.
+- Add inline comments in example for `CssRgb`.
 
 ## 0.2.2 (2025-05-16)
 ### Documentation
