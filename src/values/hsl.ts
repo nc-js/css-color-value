@@ -13,18 +13,18 @@ import type { CSSColorAngle, CSSColorPercent } from './../types.ts'
  * import { CssHsl } from '@nc/css-color-value/values'
  *
  * // black and white
- * const black = new CssHsl(0, 0, 0) // hsl(0, 0%, 0%)
- * const white = new CssHsl(0, 0, 1) // hsl(0, 0%, 100%)
+ * const black = new CssHsl(0, 0, 0) // hsl(0 0% 0%)
+ * const white = new CssHsl(0, 0, 1) // hsl(0 0% 100%)
  *
  * // red, green, and blue
- * const red = new CssHsl(0, 1, 0.5) // hsl(0, 100%, 50%)
- * const green = new CssHsl(120, 1, 0.5) // hsl(120, 100%, 50%)
- * const blue = new CssHsl(240, 1, 0.5) // hsl(240, 100%, 50%)
+ * const red = new CssHsl(0, 1, 0.5) // hsl(0 100% 50%)
+ * const green = new CssHsl(120, 1, 0.5) // hsl(120 100% 50%)
+ * const blue = new CssHsl(240, 1, 0.5) // hsl(240 100% 50%)
  *
  * // cyan, magenta, and yellow
- * const cyan = new CssHsl(180, 1, 0.5) // hsl(180, 100%, 50%)
- * const magenta = new CssHsl(300, 1, 0.5) // hsl(300, 100%, 50%)
- * const yellow = new CssHsl(60, 1, 0.5) // hsl(64, 100%, 50%)
+ * const cyan = new CssHsl(180, 1, 0.5) // hsl(180 100% 50%)
+ * const magenta = new CssHsl(300, 1, 0.5) // hsl(300 100% 50%)
+ * const yellow = new CssHsl(60, 1, 0.5) // hsl(64 100% 50%)
  * ```
  */
 export class CssHsl extends CssColorValue {

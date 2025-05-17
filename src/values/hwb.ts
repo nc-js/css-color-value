@@ -11,16 +11,16 @@ import { rectifyColorAngle, rectifyColorPercent } from '../reify.ts'
  * ```ts ignore
  * import { CssHwb } from '@nc/css-color-value/values'
  *
- * const black = new CssHwb(CSS.deg(0), 0, 0) // hsl(0, 0%, 0%)
- * const white = new CssHwb(CSS.deg(0), 1, 0) // hsl(0, 100%, 0%)
+ * const black = new CssHwb(CSS.deg(0), 0, 0) // hwb(0 0% 0%)
+ * const white = new CssHwb(CSS.deg(0), 1, 0) // hwb(0 100% 0%)
  *
- * const red = new CssHwb(CSS.deg(0), 0, 0) // hsl(0, 0%, 0%)
- * const green = new CssHwb(CSS.deg(120), 0, 0) // hsl(120deg, 0%, 0%)
- * const blue = new CssHwb(CSS.deg(240), 0, 0) // hsl(240deg, 0%, 0%)
+ * const red = new CssHwb(CSS.deg(0), 0, 0) // hwb(0 0% 0%)
+ * const green = new CssHwb(CSS.deg(120), 0, 0) // hwb(120deg 0% 0%)
+ * const blue = new CssHwb(CSS.deg(240), 0, 0) // hwb(240deg 0% 0%)
  *
- * const cyan = new CssHwb(CSS.deg(180), 0, 0) // hsl(180deg, 0%, 0%)
- * const magenta = new CssHwb(CSS.deg(300), 0, 0) // hsl(300deg, 0%, 0%)
- * const yellow = new CssHwb(CSS.deg(60), 0, 0) // hsl(60deg, 0%, 0%)
+ * const cyan = new CssHwb(CSS.deg(180), 0, 0) // hwb(180deg 0% 0%)
+ * const magenta = new CssHwb(CSS.deg(300), 0, 0) // hwb(300deg 0% 0%)
+ * const yellow = new CssHwb(CSS.deg(60), 0, 0) // hwb(60deg 0% 0%)
  * ```
  */
 export class CssHwb extends CssColorValue {

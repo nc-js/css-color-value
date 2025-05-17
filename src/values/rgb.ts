@@ -13,18 +13,18 @@ import type { CSSColorPercent, CSSColorRGBComp } from './../types.ts'
  * import { CssRgb } from '@nc/css-color-value/values'
  *
  * // black and white
- * const black = new CssRgb(0, 0, 0)
- * const white = new CssRgb(255, 255, 255)
+ * const black = new CssRgb(0, 0, 0) // rgb(0 0 0)
+ * const white = new CssRgb(255, 255, 255) // rgb(255 255 255)
  *
  * // red, green, and blue
- * const red = new CssRgb(255, 0, 0)
- * const green = new CssRgb(0, 255, 0)
- * const blue = new CssRgb(0, 0, 255)
+ * const red = new CssRgb(255, 0, 0) // rgb(255 0 0)
+ * const green = new CssRgb(0, 255, 0) // rgb(0 255 0)
+ * const blue = new CssRgb(0, 0, 255) // rgb(0 0 255)
  *
  * // cyan, magenta, and yellow
- * const cyan = new CssRgb(0, 255, 255)
- * const magenta = new CssRgb(255, 0, 255)
- * const yellow = new CssRgb(255, 255, 0)
+ * const cyan = new CssRgb(0, 255, 255) // rgb(0 255 255)
+ * const magenta = new CssRgb(255, 0, 255) // rgb(255 0 255)
+ * const yellow = new CssRgb(255, 255, 0) // rgb(255 255 0)
  * ```
  */
 export class CssRgb extends CssColorValue {
