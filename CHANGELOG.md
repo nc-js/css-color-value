@@ -4,6 +4,7 @@
 ### documentation
 - Fix minor typo in documentation for `CssHwb` and `CssOkLch`.
 - Add inline comments in example for `CssRgb`.
+- Use consistent notation for CSS functions in `CssHsl`, `CssHwl`, `CssOkLch`, and `CssRgb`.
 
 ## 0.2.2 (2025-05-16)
 ### Documentation
